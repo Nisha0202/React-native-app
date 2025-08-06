@@ -1,5 +1,6 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
+import Task from "../components/Task";
 
 export default function Index() {
   return (
@@ -9,7 +10,7 @@ export default function Index() {
       {/* Today's Task */}
       <View style={styles.taskWrapper}>
         <Text style={styles.sectionTitle}>Today's tasks</Text>
-
+        <Task> hello</Task>
         <View style={styles.items}>
 
         </View>
@@ -27,18 +28,19 @@ const styles = StyleSheet.create(
       backgroundColor: '#fff',
     },
     taskWrapper: {
-flex: 1,
-backgroundColor : '#fff',
-      },
+      paddingTop: 50,
+      paddingHorizontal: 20,
+    },
 
-      sectionTitle: {
-flex: 1,
-backgroundColor : '#fff',
-      },
-      items: {
-flex: 1,
-backgroundColor : '#fff',
-      },
+    sectionTitle: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      color: '#02040f',
+      paddingBottom: 12,
+    },
+    items: {
+
+    },
 
 
 
