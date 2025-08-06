@@ -1,17 +1,56 @@
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>hello</Text>
-      <Link href="/login">login</Link>
+      style={styles.container}>
+
+      {/* Today's Task */}
+      <View style={styles.taskWrapper}>
+        <Text style={styles.sectionTitle}>Today's tasks</Text>
+
+        <View style={styles.items}>
+
+        </View>
+
+
+
+      </View>
     </View>
   );
 }
+const styles = StyleSheet.create(
+  {
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+    },
+    taskWrapper: {
+flex: 1,
+backgroundColor : '#fff',
+      },
+
+      sectionTitle: {
+flex: 1,
+backgroundColor : '#fff',
+      },
+      items: {
+flex: 1,
+backgroundColor : '#fff',
+      },
+
+
+
+
+
+
+
+  }
+)
+
+
+
+
+
+
