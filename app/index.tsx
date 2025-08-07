@@ -1,63 +1,17 @@
-import { Link } from "expo-router";
-import { StyleSheet, Text, View } from "react-native";
+import { View, Text } from "react-native";
 import Task from "../components/Task";
 
 export default function Index() {
   return (
-    <View
-      style={styles.container}>
-
+    <View className="flex-1 bg-violet-100 p-4 max-w-screen-lg mx-auto w-full">
       {/* Today's Task */}
-      <View style={styles.taskWrapper}>
-        <Text style={styles.sectionTitle}>Today's tasks</Text>
-        <View >
-    <Task> hello</Task>
-             <Task> hellogyyyyuuuuuuuuuuyuuu</Task>
+      <View className="">
+        <Text className="text-2xl py-3 font-bold text-[#02040f]">Today's tasks</Text>
+        <View>
+          <Task>hello</Task>
+          <Task>hellogyyyyuuuuuuuuuuyuuu</Task>
         </View>
-    
-        
-
-
-     
-
-
       </View>
     </View>
   );
 }
-const styles = StyleSheet.create(
-  {
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-    },
-    taskWrapper: {
-      paddingTop: 50,
-      paddingHorizontal: 20,
-    },
-
-    sectionTitle: {
-      fontSize: 24,
-      fontWeight: 'bold',
-      color: '#02040f',
-      paddingBottom: 12,
-    },
-    itemText: {
-      maxWidth: '80%'
-
-    },
-
-
-
-
-
-
-
-  }
-)
-
-
-
-
-
-
