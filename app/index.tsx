@@ -10,11 +10,15 @@ export default function Index() {
       {/* Today's Task */}
       <View style={styles.taskWrapper}>
         <Text style={styles.sectionTitle}>Today's tasks</Text>
-        <Task> hello</Task>
-        <View style={styles.items}>
-
+        <View >
+    <Task> hello</Task>
+             <Task> hellogyyyyuuuuuuuuuuyuuu</Task>
         </View>
+    
+        
 
+
+     
 
 
       </View>
@@ -38,7 +42,8 @@ const styles = StyleSheet.create(
       color: '#02040f',
       paddingBottom: 12,
     },
-    items: {
+    itemText: {
+      maxWidth: '80%'
 
     },
 
